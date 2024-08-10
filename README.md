@@ -12,11 +12,11 @@ This script is designed to dynamically create a basic Python package structure i
 When you run the script, it generates the following structure:
 
 ```bash
-.
+<package_name>
 ├── LICENSE
 ├── README.md
 ├── requirements.txt
-├── sampy
+├── <package_name>
 │   ├── __init__.py
 │   └── installer.py
 ├── setup.py
@@ -30,11 +30,11 @@ When you run the script, it generates the following structure:
 If you specify `.` as the package name, the structure will be created within the current directory:
 
 ```bash
-current_directory
+<current_directory>
 ├── LICENSE
 ├── README.md
 ├── requirements.txt
-├── current_directory
+├──< current_directory>
 │   ├── __init__.py
 │   └── installer.py
 ├── setup.py
