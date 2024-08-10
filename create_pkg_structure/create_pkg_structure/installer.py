@@ -3,7 +3,7 @@ import os
 # Function to create the package structure
 def create_package_structure(package_name):
     if package_name == '.':
-        root_dir = os.getcwd()  # Use the current directory
+        root_dir = os.getcwd()
     else:
         root_dir = package_name
         os.makedirs(root_dir, exist_ok=True)
@@ -25,6 +25,5 @@ def create_package_structure(package_name):
 
     print(f"Package structure created under {root_dir}")
 
-# Prompt the user for the package name
 package_name = input("Enter the package name (or '.' for the current directory): ")
 create_package_structure(package_name)
